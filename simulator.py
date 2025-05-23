@@ -57,6 +57,8 @@ for t in range (numgen):
                 if nb == 2 or nb == 3: ##sobrevivencia
                     switchermatrix[i][j] = 1
 
+                celulas = celulas + 1
+
     gamematrix = switchermatrix
     time.sleep(0.1)
     os.system('clear')
@@ -64,4 +66,3 @@ for t in range (numgen):
     print(f"Células vivas: {celulas}")
     for linha in gamematrix:
           print(''.join('.' if x == 0 else '■' for x in linha))
-
